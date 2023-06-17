@@ -27,7 +27,7 @@ function Navbar() {
   );
 
   return (
-    <div>
+    <div className="container">
       <div className="navbar bg-base-100 justify-between">
         <div className="navbar-start ">
           <div className="dropdown">
@@ -49,7 +49,7 @@ function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-50"
             >
               {menuItems}
             </ul>
@@ -57,7 +57,9 @@ function Navbar() {
           <a className="btn btn-ghost normal-case text-xl">Dental</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{menuItems}</ul>
+          <ul className="menu menu-horizontal px-1 text-base text-black">
+            {menuItems}
+          </ul>
         </div>
       </div>
     </div>
