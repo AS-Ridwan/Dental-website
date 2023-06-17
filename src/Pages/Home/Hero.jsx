@@ -9,7 +9,7 @@ function Hero() {
   return (
     <div>
       <Carousel
-        className="rounded-xl"
+        className=""
         navigation={({ setActiveIndex, activeIndex, length }) => (
           <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
             {new Array(length).fill("").map((_, i) => (
@@ -24,25 +24,25 @@ function Hero() {
           </div>
         )}
       >
-        <div className="relative h-full w-full ">
+        <div className="relative lg:h-full w-full h-96 ">
           <img
             src={bgTwo}
             alt="image 1"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/25">
+          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/20">
             <div className="w-3/4 text-left md:w-3/4">
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+                className="mb-4 text-3xl md:text-4xl lg:text-5xl xl:text-8xl text-primary"
               >
                 The Beauty of Nature
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-12 opacity-80 sm:w-4/4 md:w-3/4 lg:w-2/4     text-sm lg:text-base"
+                className="mb-8 lg:mb-12 opacity-80 sm:w-4/4 md:w-3/4 lg:w-2/4 text-sm lg:text-base"
               >
                 It is not so much for its beauty that the forest makes a claim
                 upon men&apos;s hearts, as for that subtle something, that
@@ -53,7 +53,7 @@ function Hero() {
                 <Button
                   size="lg"
                   color="white"
-                  className="bg-primary text-white"
+                  className="text-xs lg:text-sm bg-primary text-white"
                 >
                   Explore
                 </Button>
@@ -61,7 +61,7 @@ function Hero() {
                   size="lg"
                   color="white"
                   variant="text"
-                  className="bg-white/20"
+                  className="text-xs lg:text-sm bg-white/20"
                 >
                   Gallery
                 </Button>
@@ -75,19 +75,19 @@ function Hero() {
             alt="image 2"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/25">
+          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/20">
             <div className="w-3/4 text-left md:w-3/4">
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+                className="mb-4 text-3xl md:text-4xl lg:text-5xl xl:text-8xl text-primary"
               >
                 The Beauty of Nature
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-12 opacity-80 lg:w-2/4 md:w-3/4"
+                className="mb-8 lg:mb-12 opacity-80 sm:w-4/4 md:w-3/4 lg:w-2/4 text-sm lg:text-base"
               >
                 It is not so much for its beauty that the forest makes a claim
                 upon men&apos;s hearts, as for that subtle something, that
@@ -95,10 +95,19 @@ function Hero() {
                 wonderfully changes and renews a weary spirit.
               </Typography>
               <div className="flex justify-left gap-2">
-                <Button size="lg" color="white">
+                <Button
+                  size="lg"
+                  color="white"
+                  className="text-xs lg:text-sm bg-primary text-white"
+                >
                   Explore
                 </Button>
-                <Button size="lg" color="white" variant="text">
+                <Button
+                  size="lg"
+                  color="white"
+                  variant="text"
+                  className="text-xs lg:text-sm bg-white/20"
+                >
                   Gallery
                 </Button>
               </div>
@@ -107,19 +116,19 @@ function Hero() {
         </div>
         <div className="relative h-full w-full">
           <img src={bgThree} className="h-full w-full object-cover" />
-          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/25">
+          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/20">
             <div className="w-3/4 text-left md:w-3/4">
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+                className="mb-4 lg:text-5xlmb-4 text-3xl md:text-4xl lg:text-5xl xl:text-8xl text-primary"
               >
                 The Beauty of Nature
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-12 opacity-80 lg:w-2/4 md:w-3/4"
+                className="mb-8 lg:mb-12 opacity-80 sm:w-4/4 md:w-3/4 lg:w-2/4 text-sm lg:text-base"
               >
                 It is not so much for its beauty that the forest makes a claim
                 upon men&apos;s hearts, as for that subtle something, that
@@ -127,10 +136,19 @@ function Hero() {
                 wonderfully changes and renews a weary spirit.
               </Typography>
               <div className="flex justify-left gap-2">
-                <Button size="lg" color="white">
+                <Button
+                  size="lg"
+                  color="white"
+                  className="text-xs lg:text-sm bg-primary text-white"
+                >
                   Explore
                 </Button>
-                <Button size="lg" color="white" variant="text">
+                <Button
+                  size="lg"
+                  color="white"
+                  variant="text"
+                  className="text-xs lg:text-sm bg-white/20"
+                >
                   Gallery
                 </Button>
               </div>
