@@ -69,7 +69,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="relative h-full w-full">
+        <div className="relative lg:h-full w-full h-96">
           <img
             src={bgOne}
             alt="image 2"
@@ -114,7 +114,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="relative h-full w-full">
+        <div className="relative lg:h-full w-full h-96">
           <img src={bgThree} className="h-full w-full object-cover" />
           <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/20">
             <div className="w-3/4 text-left md:w-3/4">

@@ -6,7 +6,7 @@ import phone from "../../assets/icons/phone.svg";
 
 function Info() {
   return (
-    <div className="container grid grid-cols-1 lg:grid-cols-3 gap-8 my-24">
+    <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-28">
       <InfoCard
         cardTitle="Opening Hours"
         bgClass="bg-indigo-200"
