@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Info from "./Info";
 import Services from "./Services";
 import MakeAppointment from "./MakeAppointment";
+import Contact from "./Contact";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Info></Info>
       <Services></Services>
       <MakeAppointment></MakeAppointment>
+      <Contact></Contact>
     </div>
   );
 }
