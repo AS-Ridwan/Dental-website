@@ -4,6 +4,8 @@ import Info from "./Info";
 import Services from "./Services";
 import MakeAppointment from "./MakeAppointment";
 import Contact from "./Contact";
+import Footer from "./Footer";
+import Testimonial from "./Testimonial";
 
 function Home() {
   return (
@@ -12,7 +14,9 @@ function Home() {
       <Info></Info>
       <Services></Services>
       <MakeAppointment></MakeAppointment>
+      <Testimonial></Testimonial>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 }
