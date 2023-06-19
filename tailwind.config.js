@@ -11,7 +11,7 @@ export default withMT({
     themes: [
       {
         mytheme: {
-          primary: "#205de0",
+          primary: "#00bcd4",
           secondary: "#19d3ae",
           accent: "#3a4256",
           neutral: "#3d4451",

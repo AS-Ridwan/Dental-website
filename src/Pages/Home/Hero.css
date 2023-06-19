@@ -1,0 +1,10 @@
+@media screen and (max-width: 480px) {
+  .hero-main {
+    height: 35rem;
+  }
+}
+.hero-img {
+  outline: 999px solid #0d6a7787;
+  outline-offset: -999px;
+  overflow: hidden;
+}
