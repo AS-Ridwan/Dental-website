@@ -11,7 +11,7 @@ import { StarIcon } from "@heroicons/react/24/solid";
 function Review({ review }) {
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl ">
+      <div className="card w-max-lg lg:w-96 bg-base-100 shadow-xl ">
         <CardHeader
           color="transparent"
           floated={false}

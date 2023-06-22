@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer className="">
-      <div className="px-64 footer p-10 bg-base-200 text-base-content justify-around">
+      <div className="px-0 md:px-64 lg:px-64 footer p-10 bg-base-200 text-base-content justify-around">
         <div>
           <span className="footer-title">Services</span>
           <a className="link link-hover">Branding</a>
@@ -34,9 +34,9 @@ function Footer() {
               <input
                 type="text"
                 placeholder="username@site.com"
-                className="input input-bordered w-full pr-16"
+                className="input input-bordered w-48 md:w-full lg:w-full pr-16"
               />
-              <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">
+              <button className="btn btn-primary static md:absolute lg:absolute top-0 right-0 rounded-l-none">
                 Subscribe
               </button>
             </div>
