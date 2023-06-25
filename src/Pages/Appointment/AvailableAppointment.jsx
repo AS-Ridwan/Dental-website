@@ -9,7 +9,7 @@ function AvailableAppointment({ selected }) {
   const [treatment, setTreatment] = useState(null);
 
   useEffect(() => {
-    const url = "./services.json";
+    const url = "http://localhost:5000/service";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setServices(data));
@@ -28,7 +28,13 @@ function AvailableAppointment({ selected }) {
           ></AppointDate>
         ))}
       </div>
-      {treatment && <BookingModel treatment={treatment}></BookingModel>}
+      {treatment && (
+        <BookingModel
+          treatment={treatment}
+          setTreatment={setTreatment}
+          selected={selected}
+        ></BookingModel>
+      )}
     </div>
   );
 }
