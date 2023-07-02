@@ -1,15 +1,49 @@
 /* eslint-disable react/prop-types */
 import { format } from "date-fns";
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { toast } from "react-toastify";
 
-function BookingModel({ treatment, setTreatment, selected }) {
-  const { name, slots } = treatment;
+function BookingModel({ treatment, setTreatment, selected, refetch }) {
+  const { _id, name, slots } = treatment;
+  const [user] = useAuthState(auth);
+
+  const formateDate = format(selected, "PP");
 
   const bookingSubmit = (e) => {
     e.preventDefault();
     const slot = e.target.slot.value;
-    console.log(name, slot);
-    setTreatment(null);
+
+    const booking = {
+      treatmentId: _id,
+      treatment: name,
+      slot,
+      selected: formateDate,
+      patientName: user.displayName,
+      patientMail: user.email,
+      phoneNumber: e.target.phone.value,
+    };
+
+    fetch("http://localhost:5000/booking", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(booking),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          toast(`Appointment is set, ${formateDate} at ${slot} `);
+        } else {
+          toast.error(
+            `Already have an Appointment on ${data.booking?.selected} at ${slot}`
+          );
+        }
+        refetch();
+        setTreatment(null);
+      });
   };
 
   return (
@@ -51,13 +85,15 @@ function BookingModel({ treatment, setTreatment, selected }) {
             <input
               type="text"
               name="name"
-              placeholder="Your Name"
+              disabled
+              value={user ? user.displayName : ""}
               className="input input-bordered focus:outline-none input-accent w-full max-w-xs"
             />
             <input
               type="email"
               name="email"
-              placeholder="Your Email"
+              disabled
+              value={user ? user.email : ""}
               className="input input-bordered focus:outline-none input-accent w-full max-w-xs"
             />
             <input

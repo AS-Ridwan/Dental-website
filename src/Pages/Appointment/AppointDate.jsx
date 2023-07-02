@@ -2,7 +2,7 @@
 import React from "react";
 
 function AppointDate({ service, setTreatment }) {
-  const { name, slots } = service;
+  const { _id, name, slots } = service;
   return (
     <div className="card lg:max-w-lg bg-base-100 shadow-xl">
       <div className="card-body items-center text-black">

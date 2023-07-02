@@ -1,11 +1,5 @@
-import React from "react";
-import {
-  Card,
-  Input,
-  Checkbox,
-  Button,
-  Typography,
-} from "@material-tailwind/react";
+import React, { useEffect } from "react";
+import { Card, Button, Typography } from "@material-tailwind/react";
 import {
   useSignInWithEmailAndPassword,
   useSignInWithFacebook,
@@ -34,9 +28,12 @@ function Login() {
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
 
-  if (fUser || gUser || user) {
-    navigate(from, { replace: true });
-  }
+  useEffect(() => {
+    if (fUser || gUser || user) {
+      navigate(from, { replace: true });
+    }
+  }, [fUser, gUser, user, navigate, from]);
+
   const onSubmit = (data) => {
     console.log(data);
     signInWithEmailAndPassword(data.email, data.password);
