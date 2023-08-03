@@ -5,6 +5,8 @@ import auth from "../../../firebase.init";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
 
+import logo from "../../../assets/images/teeth-icon.png";
+
 function Navbar() {
   const [user, loading, error] = useAuthState(auth);
   const logout = () => {
@@ -49,7 +51,7 @@ function Navbar() {
   return (
     <div className="container">
       <div className="navbar bg-base-100 justify-between">
-        <div className="navbar-start ">
+        <div className="navbar-start w-full">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -79,7 +81,9 @@ function Navbar() {
             to="/"
             className=" normal-case text-black text-xl hover:text-black"
           >
-            <span>Dental Care</span>
+            <span className="flex items-center">
+              <img src={logo} alt="" className="w-16" /> Dental Care
+            </span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
