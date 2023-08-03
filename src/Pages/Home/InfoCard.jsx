@@ -1,24 +1,21 @@
-/* eslint-disable react/no-unescaped-entities */
-import React from "react";
+// /* eslint-disable react/no-unescaped-entities */
+// import React from "react";
 
-// eslint-disable-next-line react/prop-types
-function InfoCard({ img, cardTitle, bgClass }) {
-  return (
-    <div>
-      <div className={`card lg:card-side bg-base-100 shadow-xl ${bgClass}`}>
-        <figure>
-          <img src={img} alt="Album" className="w-11 md:w-11 lg:w-full" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title text-white">{cardTitle}</h2>
-          <p className="text-white text-left">
-            It is not so much for its beauty that the forest makes a claim upon
-            men's hearts.
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
+// // eslint-disable-next-line react/prop-types
+// function InfoCard({ img, cardTitle, bgClass, cardDes }) {
+//   return (
+//     <div>
+//       <div className={`card lg:card-side bg-base-100 shadow-xl ${bgClass}`}>
+//         <figure>
+//           <img src={img} alt="Album" className="w-11 md:w-11 lg:w-full" />
+//         </figure>
+//         <div className="card-body">
+//           <h2 className="card-title text-white">{cardTitle}</h2>
+//           <p className="text-white text-left">{cardDes}</p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
-export default InfoCard;
+// export default InfoCard;

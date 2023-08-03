@@ -8,6 +8,7 @@ import { toast } from "react-toastify";
 function BookingModel({ treatment, setTreatment, selected, refetch }) {
   const { _id, name, slots } = treatment;
   const [user] = useAuthState(auth);
+  // console.log(user);
 
   const formateDate = format(selected, "PP");
 

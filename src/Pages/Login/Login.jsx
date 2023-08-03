@@ -9,6 +9,7 @@ import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../Shared/Loading/Loading";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import useToken from "../../hooks/useToken";
 
 function Login() {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -23,19 +24,20 @@ function Login() {
     formState: { errors },
   } = useForm();
 
+  const [token] = useToken(fUser || gUser || user);
+
   let signInError;
   const navigate = useNavigate();
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
 
   useEffect(() => {
-    if (fUser || gUser || user) {
+    if (token) {
       navigate(from, { replace: true });
     }
-  }, [fUser, gUser, user, navigate, from]);
+  }, [token, navigate, from]);
 
   const onSubmit = (data) => {
-    console.log(data);
     signInWithEmailAndPassword(data.email, data.password);
   };
 
@@ -68,6 +70,7 @@ function Login() {
               <input
                 type="email"
                 placeholder="Enter Your Email"
+                autoComplete="username"
                 className="input input-bordered w-full max-w-lg"
                 {...register("email", {
                   required: {
@@ -104,6 +107,7 @@ function Login() {
               <input
                 type="password"
                 placeholder="Enter Your Password"
+                autoComplete="current-password"
                 className="input input-bordered w-full max-w-lg"
                 {...register("password", {
                   required: {

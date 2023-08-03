@@ -17,10 +17,17 @@ function AvailableAppointment({ selected }) {
     isLoading,
     refetch,
   } = useQuery(["available", formattedDate], () =>
-    fetch(`http://localhost:5000/available?date=${formattedDate}`).then((res) =>
-      res.json()
+    fetch(`http://localhost:5000/available?selected=${formattedDate}`).then(
+      (res) => res.json()
     )
   );
+
+  // useEffect(() => {
+  //   fetch(`http://localhost:5000/available?selected=${formattedDate}`)
+  //     .then((res) => res.json())
+  //     .then((data) => setServices(data));
+  // }, [formattedDate]);
+
   if (isLoading) {
     return <Loading></Loading>;
   }

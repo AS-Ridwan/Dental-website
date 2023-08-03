@@ -1,11 +1,5 @@
-import React from "react";
-import {
-  Card,
-  Input,
-  Checkbox,
-  Button,
-  Typography,
-} from "@material-tailwind/react";
+import React, { useState } from "react";
+import { Card, Button, Typography } from "@material-tailwind/react";
 import {
   useCreateUserWithEmailAndPassword,
   useSignInWithFacebook,
@@ -15,6 +9,8 @@ import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../Shared/Loading/Loading";
 import { Link, useNavigate } from "react-router-dom";
+import { useUpdateProfile } from "react-firebase-hooks/auth";
+import useToken from "../../hooks/useToken";
 
 function Signup() {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -22,26 +18,39 @@ function Signup() {
     useSignInWithFacebook(auth);
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
+  const [displayName, setDisplayName] = useState("");
+  const [updateProfile, updating, pError] = useUpdateProfile(auth);
   const {
     register,
     handleSubmit,
-    watch,
+
     formState: { errors },
   } = useForm();
+
+  const [token] = useToken(fUser || gUser || user);
+
   const navigate = useNavigate();
 
-  if (fUser || gUser || user) {
-    console.log(fUser, gUser, user);
-  }
-  const onSubmit = (data) => {
-    createUserWithEmailAndPassword(data.email, data.password);
+  if (token) {
+    // console.log(fUser, gUser, user);
     navigate("/appointment");
+  }
+  const onSubmit = async (data) => {
+    await createUserWithEmailAndPassword(data.email, data.password);
+    await updateProfile({ displayName: data.name });
   };
   let signInError;
-  if (error || gError || fError) {
-    signInError = <p>{error?.message || gError?.message || fError?.message}</p>;
+  if (error || gError || fError || pError) {
+    signInError = (
+      <p>
+        {error?.message ||
+          gError?.message ||
+          fError?.message ||
+          pError?.message}
+      </p>
+    );
   }
-  if (loading || gLoading || fLoading) {
+  if (loading || gLoading || fLoading || updating) {
     return <Loading></Loading>;
   }
   return (
@@ -66,6 +75,7 @@ function Signup() {
               </label>
               <input
                 type="text"
+                name="name"
                 placeholder="Enter Your Name"
                 className="input input-bordered w-full max-w-lg"
                 {...register("name", {
@@ -102,6 +112,7 @@ function Signup() {
               <input
                 type="email"
                 placeholder="Enter Your Email"
+                autoComplete="username"
                 className="input input-bordered w-full max-w-lg"
                 {...register("email", {
                   required: {
@@ -137,7 +148,9 @@ function Signup() {
               </label>
               <input
                 type="password"
+                name="password"
                 placeholder="Enter Your Password"
+                autoComplete="current-password"
                 className="input input-bordered w-full max-w-lg"
                 {...register("password", {
                   required: {

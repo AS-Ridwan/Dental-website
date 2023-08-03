@@ -3,8 +3,3 @@
     height: 35rem;
   }
 }
-.hero-img {
-  outline: 999px solid #03030387;
-  outline-offset: -999px;
-  overflow: hidden;
-}

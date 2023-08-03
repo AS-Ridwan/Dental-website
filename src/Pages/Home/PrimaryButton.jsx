@@ -8,7 +8,7 @@ function PrimaryButton({ children }) {
       <Button
         size="lg"
         color="white"
-        className="text-xs lg:text-sm bg-white  text-primary"
+        className="text-xs lg:text-sm bg-cyan-600 hover:bg-cyan-400 text-white "
       >
         {children}
       </Button>

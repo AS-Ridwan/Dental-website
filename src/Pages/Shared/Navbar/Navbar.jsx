@@ -9,6 +9,7 @@ function Navbar() {
   const [user, loading, error] = useAuthState(auth);
   const logout = () => {
     signOut(auth);
+    localStorage.removeItem("accessToken");
   };
 
   const menuItems = (
@@ -73,9 +74,13 @@ function Navbar() {
               {menuItems}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-black text-xl">
-            Dental Care
-          </a>
+
+          <Link
+            to="/"
+            className=" normal-case text-black text-xl hover:text-black"
+          >
+            <span>Dental Care</span>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-base text-black">

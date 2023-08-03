@@ -2,6 +2,7 @@ import React from "react";
 import doctor from "../../assets/images/doctor-2.png";
 import appointment from "../../assets/images/appointment-1.jpg";
 import PrimaryButton from "./primaryButton";
+import { Link } from "react-router-dom";
 
 function MakeAppointment() {
   return (
@@ -21,7 +22,9 @@ function MakeAppointment() {
           tempora expedita voluptatem eius minus, vel laborum inventore
           repudiandae distinctio. Facilis?
         </p>
-        <PrimaryButton>Book Appointment</PrimaryButton>
+        <Link to="/appointment">
+          <PrimaryButton>Book Appointment</PrimaryButton>
+        </Link>
       </div>
     </section>
   );
