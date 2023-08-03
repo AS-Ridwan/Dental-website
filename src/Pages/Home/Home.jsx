@@ -6,8 +6,10 @@ import MakeAppointment from "./MakeAppointment";
 import Contact from "./Contact";
 import Footer from "../Shared/Footer";
 import Testimonial from "./Testimonial";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 
 function Home() {
+  useDocumentTitle("Home");
   return (
     <div>
       <Hero></Hero>
