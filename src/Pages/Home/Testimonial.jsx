@@ -13,7 +13,7 @@ function Testimonial() {
       name: "Candice Wu",
       details: "Businessman",
       description:
-        '"I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"',
+        "“I'd been avoiding the dentist for years due to bad experiences.But I have been a patient here after my first appointment. My dentist is very reassuring and very helpful. Excellent treatment and advice.” ",
     },
     {
       _id: 2,
@@ -21,7 +21,7 @@ function Testimonial() {
       name: "Daniel palmer",
       details: "chemist",
       description:
-        '"I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"',
+        "“I'd been avoiding the dentist for years due to bad experiences.But I have been a patient here after my first appointment. My dentist is very reassuring and very helpful. Excellent treatment and advice.”",
     },
     {
       _id: 3,
@@ -29,7 +29,7 @@ function Testimonial() {
       name: "Lily Milton",
       details: "Manager",
       description:
-        '"I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"',
+        "“I'd been avoiding the dentist for years due to bad experiences.But I have been a patient here after my first appointment. My dentist is very reassuring and very helpful. Excellent treatment and advice.”",
     },
   ];
   return (

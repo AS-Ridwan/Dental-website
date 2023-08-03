@@ -32,11 +32,11 @@ function Review({ review }) {
             </div>
             <Typography color="blue-gray">{review.details}</Typography>
             <div className="5 flex items-center gap-0">
-              <StarIcon className="h-5 w-5 text-yellow-700" />
-              <StarIcon className="h-5 w-5 text-yellow-700" />
-              <StarIcon className="h-5 w-5 text-yellow-700" />
-              <StarIcon className="h-5 w-5 text-yellow-700" />
-              <StarIcon className="h-5 w-5 text-yellow-700" />
+              <StarIcon className="h-5 w-5 text-gray-300" />
+              <StarIcon className="h-5 w-5 text-yellow-300" />
+              <StarIcon className="h-5 w-5 text-yellow-300" />
+              <StarIcon className="h-5 w-5 text-yellow-300" />
+              <StarIcon className="h-5 w-5 text-yellow-300" />
             </div>
           </div>
         </CardHeader>
