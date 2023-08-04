@@ -10,6 +10,7 @@ import RequireAuth from "./Pages/RequireAuth/RequireAuth";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "animate.css";
+import ContactUs from "./Pages/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           }
         ></Route>
         <Route path="/about" element={<About></About>}></Route>
+        <Route path="/contactus" element={<ContactUs></ContactUs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
       </Routes>

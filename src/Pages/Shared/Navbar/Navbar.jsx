@@ -29,7 +29,7 @@ function Navbar() {
         <Link to="/about">About</Link>
       </li>
       <li>
-        <Link to="/about">Contact Us</Link>
+        <Link to="/contactus">Contact Us</Link>
       </li>
       <li>
         {user ? (
