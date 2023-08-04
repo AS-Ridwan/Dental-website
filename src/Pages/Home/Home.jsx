@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import Info from "./Info";
 import Services from "./Services";
 import MakeAppointment from "./MakeAppointment";
-import Contact from "./Contact";
+import Contact from "../ContactUs/Contact";
 import Footer from "../Shared/Footer";
 import Testimonial from "./Testimonial";
 import useDocumentTitle from "../../hooks/useDocumentTitle";
@@ -17,7 +17,6 @@ function Home() {
       <Services></Services>
       <MakeAppointment></MakeAppointment>
       <Testimonial></Testimonial>
-      <Contact></Contact>
       <Footer></Footer>
     </div>
   );

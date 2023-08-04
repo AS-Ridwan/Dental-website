@@ -1,14 +1,11 @@
 import React from "react";
-import PrimaryButton from "./primaryButton";
+import PrimaryButton from "../Home/primaryButton";
 
 function Contact() {
   return (
     <section className="text-gray-700 body-font relative bg-neutral-50">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-primary">
-            Contact Us
-          </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed  text-xl">
             Fill out the form below and we will contact you during our working
             hours.
@@ -28,6 +25,7 @@ function Contact() {
                   type="text"
                   id="name"
                   name="name"
+                  placeholder="Your Name"
                   className="w-full  rounded border border-primary focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out bg-white"
                 />
               </div>
@@ -44,6 +42,7 @@ function Contact() {
                   type="email"
                   id="email"
                   name="email"
+                  placeholder="Your Email"
                   className="w-full bg-white rounded border border-primary focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
@@ -59,6 +58,7 @@ function Contact() {
                 <textarea
                   id="message"
                   name="message"
+                  placeholder="Your Message"
                   className="w-full bg-white rounded border border-primary focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
