@@ -16,7 +16,7 @@ function Services() {
 
     {
       _id: 2,
-      name: "Fluoride Treatment",
+      name: "Root Canals",
       description:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       img: cavity,
@@ -24,7 +24,7 @@ function Services() {
 
     {
       _id: 3,
-      name: "Fluoride Treatment",
+      name: "Teeth Whitening",
       description:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       img: whitening,
