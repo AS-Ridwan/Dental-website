@@ -10,10 +10,12 @@ const BreadCrum = ({ children }) => {
           <div className="text-sm breadcrumbs">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link className="hover:text-black" to="/">
+                  Home
+                </Link>
               </li>
               <li>
-                <a>{children}</a>
+                <a className="hover:text-black ">{children}</a>
               </li>
             </ul>
           </div>
