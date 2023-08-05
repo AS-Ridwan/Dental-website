@@ -47,7 +47,7 @@ function About() {
             </div>
             <div className="text-start ms-5 ">
               <h4 className="text-primary font-semibold text-lg">
-                Affordable Care
+                Amazing Team
               </h4>
               <p className="text-black  leading-7 tracking-wide">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -64,7 +64,7 @@ function About() {
             </div>
             <div className="text-start ms-5 ">
               <h4 className="text-primary font-semibold text-lg">
-                Affordable Care
+                The best equipment
               </h4>
               <p className="text-black  leading-7 tracking-wide">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
