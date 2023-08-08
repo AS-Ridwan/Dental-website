@@ -1,7 +1,6 @@
 import React from "react";
 import "./Hero.css";
 
-// import { Button, div } from "@material-tailwind/react";
 import { Button, Carousel } from "flowbite-react";
 
 import bgOne from "../../assets/images/hero-bg-1.jpg";
