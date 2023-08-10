@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 
-// eslint-disable-next-line react/prop-types
 function Service({ service }) {
   return (
     <div className="card lg:max-w-lg bg-base-100 shadow-xl">

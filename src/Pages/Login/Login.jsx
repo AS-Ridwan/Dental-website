@@ -80,7 +80,7 @@ function Login() {
 
                   pattern: {
                     value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                    message: "Provide a valid Email", // JS only: <p>error message</p> TS only support string
+                    message: "Provide a valid Email",
                   },
                 })}
               />
