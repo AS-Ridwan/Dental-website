@@ -8,7 +8,6 @@ import { toast } from "react-toastify";
 function BookingModel({ treatment, setTreatment, selected, refetch }) {
   const { _id, name, slots } = treatment;
   const [user] = useAuthState(auth);
-  // console.log(user);
 
   const formateDate = format(selected, "PP");
 
@@ -49,8 +48,6 @@ function BookingModel({ treatment, setTreatment, selected, refetch }) {
 
   return (
     <div>
-      {/* You can open the modal using ID.showModal() method */}
-
       <input type="checkbox" id="my_modal_3" className="modal-toggle" />
       <div className="modal">
         <div className="modal-box">
