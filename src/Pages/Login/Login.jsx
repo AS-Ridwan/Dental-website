@@ -117,7 +117,7 @@ function Login() {
 
                   minLength: {
                     value: 6,
-                    message: "Password must be 6 character or longer", // JS only: <p>error message</p> TS only support string
+                    message: "Password must be 6 character or longer",
                   },
                 })}
               />
