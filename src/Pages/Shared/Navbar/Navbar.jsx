@@ -23,7 +23,7 @@ function Navbar() {
         <Link to="/appointment">Appointment</Link>
       </li>
       <li>
-        <Link to="/reviews">Reviews</Link>
+        <Link to="/blogs">Blogs</Link>
       </li>
       <li>
         <Link to="/about">About</Link>
