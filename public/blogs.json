@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "../src/assets/images/",
+    "img": "./src/assets/images/blog-img-1.jpg",
     "time": "8/18/2023",
     "title": "How to get whiter teeth",
     "tags": "mravelus0@51.la",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "img": null,
+    "img": "./src/assets/images/blog-img-2.jpg",
     "time": "7/23/2023",
     "title": "Take care of your smile",
     "tags": "bkunrad1@china.com.cn",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "img": null,
+    "img": "./src/assets/images/blog-img-3.jpg",
     "time": "12/27/2022",
     "title": "How to get whiter teeth in 2 weeks",
     "tags": "bbeavis2@xing.com",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "img": null,
+    "img": "./src/assets/images/blog-img-4.jpg",
     "time": "3/4/2023",
     "title": "10 tips for better teeth",
     "tags": "cfoggarty3@google.com.br",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "img": null,
+    "img": "./src/assets/images/blog-img-5.jpg",
     "time": "6/3/2023",
     "title": "How to get whiter teeth",
     "tags": "mtilby4@wisc.edu",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "img": null,
+    "img": "./src/assets/images/blog-img-6.jpg",
     "time": "1/4/2023",
     "title": "How to get whiter teeth in 2 weeks",
     "tags": "nzapatero5@sourceforge.net",
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "img": null,
+    "img": "./src/assets/images/blog-img-7.jpg",
     "time": "8/26/2023",
     "title": "How to get whiter teeth",
     "tags": "hfell6@purevolume.com",
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "img": null,
+    "img": "./src/assets/images/blog-img-5.jpg",
     "time": "4/26/2023",
     "title": "10 tips for better teeth",
     "tags": "mblasdale7@rakuten.co.jp",
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "img": null,
+    "img": "./src/assets/images/blog-img-3.jpg",
     "time": "1/20/2023",
     "title": "Take care of your smile",
     "tags": "yosheilds8@apache.org",
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "img": null,
+    "img": "./src/assets/images/blog-img-4.jpg",
     "time": "7/13/2023",
     "title": "How to get whiter teeth",
     "tags": "mbloggett9@oakley.com",
@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "img": null,
+    "img": "./src/assets/images/blog-img-2.jpg",
     "time": "2/26/2023",
     "title": "Take care of your smile",
     "tags": "mparzizeka@washington.edu",
@@ -89,7 +89,7 @@
   },
   {
     "id": 12,
-    "img": null,
+    "img": "./src/assets/images/blog-img-1.jpg",
     "time": "9/19/2022",
     "title": "How to get whiter teeth",
     "tags": "freadmireb@geocities.com",
@@ -97,7 +97,7 @@
   },
   {
     "id": 13,
-    "img": null,
+    "img": "./src/assets/images/blog-img-5.jpg",
     "time": "6/3/2023",
     "title": "How to get whiter teeth",
     "tags": "gfilipychevc@lycos.com",
@@ -105,7 +105,7 @@
   },
   {
     "id": 14,
-    "img": null,
+    "img": "./src/assets/images/blog-img-7.jpg",
     "time": "6/28/2023",
     "title": "10 tips for better teeth",
     "tags": "nblazynskid@wikia.com",
@@ -113,7 +113,7 @@
   },
   {
     "id": 15,
-    "img": null,
+    "img": "./src/assets/images/blog-img-6.jpg",
     "time": "1/15/2023",
     "title": "How to get whiter teeth",
     "tags": "hlossmane@tripadvisor.com",
@@ -121,7 +121,7 @@
   },
   {
     "id": 16,
-    "img": null,
+    "img": "./src/assets/images/blog-img-4.jpg",
     "time": "7/27/2023",
     "title": "How to get whiter teeth in 2 weeks",
     "tags": "bwadesworthf@people.com.cn",
@@ -129,7 +129,7 @@
   },
   {
     "id": 17,
-    "img": null,
+    "img": "./src/assets/images/blog-img-3.jpg",
     "time": "5/27/2023",
     "title": "How to get whiter teeth",
     "tags": "chearndeng@comsenz.com",
@@ -137,7 +137,7 @@
   },
   {
     "id": 18,
-    "img": null,
+    "img": "./src/assets/images/blog-img-2.jpg",
     "time": "7/23/2023",
     "title": "10 tips for better teeth",
     "tags": "dwharramh@discuz.net",
@@ -145,7 +145,7 @@
   },
   {
     "id": 19,
-    "img": null,
+    "img": "./src/assets/images/blog-img-1.jpg",
     "time": "2/18/2023",
     "title": "How to get whiter teeth",
     "tags": "pbeaulieui@wunderground.com",
@@ -153,7 +153,7 @@
   },
   {
     "id": 20,
-    "img": null,
+    "img": "./src/assets/images/blog-img-6.jpg",
     "time": "9/16/2022",
     "title": "Take care of your smile",
     "tags": "momoylanej@state.tx.us",

@@ -15,10 +15,10 @@ const Blogs = () => {
   return (
     <div>
       <BreadCrum>Blogs</BreadCrum>
-      <div className="container">
-        {blogs.map((blog) => {
-          <Blog blog={blog} key={blog.id}></Blog>;
-        })}
+      <div className="container my-16 ">
+        {blogs.map((blog) => (
+          <Blog blog={blog} key={blog.id}></Blog>
+        ))}
       </div>
     </div>
   );
