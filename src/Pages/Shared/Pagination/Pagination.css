@@ -1,0 +1,10 @@
+.mybtn {
+  background-color: #dfdfdf;
+  color: #0b0b0b;
+  margin-right: 5px;
+  padding: 8px 12px;
+}
+.active {
+  background-color: #26dcec;
+  color: white;
+}
