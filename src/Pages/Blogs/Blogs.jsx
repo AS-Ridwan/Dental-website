@@ -3,6 +3,7 @@ import BreadCrum from "../Shared/BreadCrum/BreadCrum";
 import Blog from "./Blog";
 import Pagination from "../Shared/Pagination/Pagination";
 import useDocumentTitle from "../../hooks/useDocumentTitle";
+import ScrollToTop from "react-scroll-to-top";
 
 const Blogs = () => {
   useDocumentTitle("Blogs");
@@ -36,6 +37,9 @@ const Blogs = () => {
           setCurrentPage={setCurrentPage}
           currentPage={currentPage}
         ></Pagination>
+        <div>
+          <ScrollToTop className="scrollBtn" smooth></ScrollToTop>
+        </div>
       </div>
     </div>
   );
