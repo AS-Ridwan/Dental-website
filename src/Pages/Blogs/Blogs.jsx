@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import BreadCrum from "../Shared/BreadCrum/BreadCrum";
 import Blog from "./Blog";
 import Pagination from "../Shared/Pagination/Pagination";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 
 const Blogs = () => {
+  useDocumentTitle("Blogs");
   const [blogs, setBlogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [blogPerPage, setBlogPerPage] = useState(4);
