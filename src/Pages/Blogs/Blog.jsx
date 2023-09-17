@@ -1,7 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
 
 const Blog = (blog) => {
   const { img, time, title, tags, paragraph } = blog.blog;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="flex items-center text-start gap-10  ">

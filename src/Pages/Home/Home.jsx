@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "../Shared/ScrollToTop/ScrollToTop.css";
 import Hero from "./Hero";
 import Info from "./Info";
 import Services from "./Services";

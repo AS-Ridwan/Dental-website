@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BreadCrum from "../Shared/BreadCrum/BreadCrum";
+import "../Shared/ScrollToTop/ScrollToTop.css";
 import Blog from "./Blog";
 import Pagination from "../Shared/Pagination/Pagination";
 import useDocumentTitle from "../../hooks/useDocumentTitle";

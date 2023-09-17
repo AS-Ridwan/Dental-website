@@ -1,12 +1,12 @@
 .scrollBtn {
   width: 50px;
   height: 50px;
-  background-color: #00bdd6;
+  background-color: #00bdd6 !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .scrollBtn svg {
-  fill: white;
+  fill: white !important;
 }
