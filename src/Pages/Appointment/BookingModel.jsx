@@ -25,7 +25,7 @@ function BookingModel({ treatment, setTreatment, selected, refetch }) {
       phoneNumber: e.target.phone.value,
     };
 
-    fetch("http://localhost:5000/booking", {
+    fetch("https://dental-servers-20q8.onrender.com/booking", {
       method: "POST",
       headers: {
         "content-type": "application/json",

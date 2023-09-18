@@ -17,13 +17,13 @@ function AvailableAppointment({ selected }) {
     isLoading,
     refetch,
   } = useQuery(["available", formattedDate], () =>
-    fetch(`http://localhost:5000/available?selected=${formattedDate}`).then(
-      (res) => res.json()
-    )
+    fetch(
+      `https://dental-servers-20q8.onrender.com/available?selected=${formattedDate}`
+    ).then((res) => res.json())
   );
 
   // useEffect(() => {
-  //   fetch(`http://localhost:5000/available?selected=${formattedDate}`)
+  //   fetch(`https://dental-servers-20q8.onrender.com/available?selected=${formattedDate}`)
   //     .then((res) => res.json())
   //     .then((data) => setServices(data));
   // }, [formattedDate]);
