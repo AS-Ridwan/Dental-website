@@ -6,7 +6,7 @@ const PageNotFound = () => {
     <div className="flex flex-col justify-center items-center mt-5">
       <img
         className="w-full max-w-[700px] h-auto"
-        src="../../../public/assets/error.png"
+        src="../../assets/images/error.png"
         alt="Page Not Found"
       />
       <Link
