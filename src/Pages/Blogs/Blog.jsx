@@ -11,7 +11,7 @@ const Blog = (blog) => {
     <div className="flex items-center text-start gap-10  ">
       <div className="flex gap-10 mt-10">
         <div className="w-fit">
-          <img className="w-96 max-w-none" src={img} alt="picture" />
+          <img className="w-96 max-w-none" src={img} alt={title} />
         </div>
         <div className="">
           <span>{time}</span>

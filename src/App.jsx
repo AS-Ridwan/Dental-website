@@ -12,6 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "animate.css";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import Blogs from "./Pages/Blogs/Blogs";
+import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/contactus" element={<ContactUs></ContactUs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
+        <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
       </Routes>
       <ToastContainer />
     </div>
