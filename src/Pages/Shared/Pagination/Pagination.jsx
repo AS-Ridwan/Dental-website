@@ -6,6 +6,7 @@ const Pagination = ({
   blogPerPage,
   setCurrentPage,
   currentPage,
+  pagePosts,
 }) => {
   const count = Math.ceil(totalPosts / blogPerPage);
   //   console.log(count);
@@ -14,7 +15,7 @@ const Pagination = ({
       {[...Array(count).keys()].map((number, i) => (
         <button
           key={i}
-          className={number == currentPage ? "active mybtn" : "mybtn"}
+          className={number === currentPage ? "active mybtn" : "mybtn"}
           onClick={() => setCurrentPage(number)}
         >
           {number}

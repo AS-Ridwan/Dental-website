@@ -27,13 +27,16 @@ const Blogs = () => {
     <div>
       <BreadCrum>Blogs</BreadCrum>
       <div className="container my-16 ">
-        {myBlogs.map((blog) => (
-          <Blog blog={blog} key={blog.id}></Blog>
-        ))}
+        {!myBlogs.length ? (
+          <div>No blogs found!</div>
+        ) : (
+          myBlogs.map((blog) => <Blog blog={blog} key={blog.id}></Blog>)
+        )}
         {/* <Pagination></Pagination> */}
 
         <Pagination
           totalPosts={blogs.length}
+          pagePosts={myBlogs.length}
           blogPerPage={blogPerPage}
           setCurrentPage={setCurrentPage}
           currentPage={currentPage}
